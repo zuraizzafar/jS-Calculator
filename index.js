@@ -1,9 +1,9 @@
 function del() {
-    document.getElementById('inp').value = '';
+    document.getElementById('inp').innerHTML = '0';
     document.getElementById('inp').focus();
 }
 function buttonp(num) {
-    var int=document.getElementById('inp').value;
+    var int=document.getElementById('inp').innerHTML;
     var a=decimal(int);
     if(a==0){
         int = (int*1)+num;
@@ -11,7 +11,7 @@ function buttonp(num) {
     else {
         int = (int*10)+num;
     }
-    document.getElementById('inp').value = int;
+    document.getElementById('inp').innerHTML = int;
     document.getElementById('inp').focus();
 }
 function decimal(a) {
