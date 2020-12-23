@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,13 @@
                 <div class="text-center">
                     <div class="row mt-2">
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">7</button>
+                            <button onclick="buttonp(7)" class="btn btn-lg btn-light w-100 p-3">7</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">8</button>
+                            <button onclick="buttonp(8)" class="btn btn-lg btn-light w-100 p-3">8</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">9</button>
+                            <button onclick="buttonp(9)" class="btn btn-lg btn-light w-100 p-3">9</button>
                         </div>
                         <div class="col-3">
                             <button class="btn btn-lg btn-secondary w-100 p-3">+</button>
@@ -37,13 +38,13 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">4</button>
+                            <button onclick="buttonp(4)" class="btn btn-lg btn-light w-100 p-3">4</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">5</button>
+                            <button onclick="buttonp(5)" class="btn btn-lg btn-light w-100 p-3">5</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">6</button>
+                            <button onclick="buttonp(6)" class="btn btn-lg btn-light w-100 p-3">6</button>
                         </div>
                         <div class="col-3">
                             <button class="btn btn-lg btn-secondary w-100 p-3">-</button>
@@ -51,13 +52,13 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">1</button>
+                            <button onclick="buttonp(1)" class="btn btn-lg btn-light w-100 p-3">1</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">2</button>
+                            <button onclick="buttonp(2)" class="btn btn-lg btn-light w-100 p-3">2</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">3</button>
+                            <button onclick="buttonp(3)" class="btn btn-lg btn-light w-100 p-3">3</button>
                         </div>
                         <div class="col-3">
                             <button class="btn btn-lg btn-secondary w-100 p-3">*</button>
@@ -65,10 +66,10 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-3">
-                            <button class="btn btn-lg btn-danger w-100 p-3">DEL</button>
+                            <button onclick="del()" class="btn btn-lg btn-danger w-100 p-3">DEL</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-lg btn-light w-100 p-3">0</button>
+                            <button onclick="buttonp(0)" class="btn btn-lg btn-light w-100 p-3">0</button>
                         </div>
                         <div class="col-3">
                             <button class="btn btn-lg btn-success w-100 p-3">=</button>
