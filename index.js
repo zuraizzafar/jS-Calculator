@@ -1,6 +1,5 @@
 function del() {
     document.getElementById('inp').innerHTML = '0';
-    document.getElementById('inp').focus();
 }
 function buttonp(num) {
     var int=document.getElementById('inp').innerHTML;
@@ -12,7 +11,6 @@ function buttonp(num) {
         int = (int*10)+num;
     }
     document.getElementById('inp').innerHTML = int;
-    document.getElementById('inp').focus();
 }
 function decimal(a) {
     i=0;
@@ -21,4 +19,32 @@ function decimal(a) {
         i++;
     }
     return i;
+}
+function preOp(opr) {
+    var int = document.getElementById('inp').innerHTML;
+    sessionStorage.setItem("inp", int);
+    document.getElementById('inp').innerHTML = '0';
+    document.getElementById('out').innerHTML = sessionStorage.getItem("inp");
+    sessionStorage.setItem("opr", opr);    
+}
+function equal() {
+    var int=Number(document.getElementById('inp').innerHTML);
+    var ints=Number(sessionStorage.getItem("inp"));
+    var opr = sessionStorage.getItem('opr');
+    if (opr=='/'){
+        var eq = ints/int;
+        document.getElementById('out').innerHTML = eq;
+    }
+    if (opr=='+'){
+        var eq = ints+int;
+        document.getElementById('out').innerHTML = eq;
+    }
+    if (opr=='-'){
+        var eq = ints-int;
+        document.getElementById('out').innerHTML = eq;
+    }
+    if (opr=='*'){
+        var eq = ints*int;
+        document.getElementById('out').innerHTML = eq;
+    }
 }
