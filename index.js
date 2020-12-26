@@ -33,18 +33,18 @@ function equal() {
     var opr = sessionStorage.getItem('opr');
     if (opr=='/'){
         var eq = ints/int;
-        document.getElementById('out').innerHTML = eq;
+        document.getElementById('out').innerHTML = '= ' + eq;
     }
     else if (opr=='+'){
         var eq = ints+int;
-        document.getElementById('out').innerHTML = eq;
+        document.getElementById('out').innerHTML = '= ' + eq;
     }
     else if (opr=='-'){
         var eq = ints-int;
-        document.getElementById('out').innerHTML = eq;
+        document.getElementById('out').innerHTML = '= ' + eq;
     }
     else if (opr=='*'){
         var eq = ints*int;
-        document.getElementById('out').innerHTML = 'ANS '+eq;
+        document.getElementById('out').innerHTML = '= ' + eq;
     }
 }
