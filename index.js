@@ -35,16 +35,16 @@ function equal() {
         var eq = ints/int;
         document.getElementById('out').innerHTML = eq;
     }
-    if (opr=='+'){
+    else if (opr=='+'){
         var eq = ints+int;
         document.getElementById('out').innerHTML = eq;
     }
-    if (opr=='-'){
+    else if (opr=='-'){
         var eq = ints-int;
         document.getElementById('out').innerHTML = eq;
     }
-    if (opr=='*'){
+    else if (opr=='*'){
         var eq = ints*int;
-        document.getElementById('out').innerHTML = eq;
+        document.getElementById('out').innerHTML = 'ANS '+eq;
     }
 }
