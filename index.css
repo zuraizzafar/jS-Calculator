@@ -10,9 +10,13 @@
 #cald {
     border-radius: 15px;
     background-color: rgb(208, 221, 231);
+    border: 2px grey solid;
+    box-shadow: 8px 12px 32px -12px rgba(0,0,0,0.75);
 }
 #inp-f {
     border-radius: 10px;
+    border: 1px grey solid;
+    box-shadow: inset 5px 5px 30px -16px rgba(0,0,0,0.75);
 }
 #out, #inp {
     font-family:'digital-clock-font';
